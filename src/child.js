@@ -20,7 +20,7 @@ function Child() {
             <ul className="transaction-list">
                {transactions.map((transObj,ind )=>{
                    return(
-                    <li>
+                    <li key={ind}>
                 <span>{transObj.desc} </span>
                 <span>{transObj.amount}</span>
             </li>)
