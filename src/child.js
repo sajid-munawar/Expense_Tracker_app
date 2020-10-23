@@ -1,12 +1,13 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import {TransactionContext} from "./transContext"
 
 function Child() {
     let {transactions} =useContext(TransactionContext)
-    const handleAddition=(event) =>{
-        event.preventDefault()
+    const handleAddition = (event) => {
+        event.preventDefault();
+    let [newDics,setDics]=useState("") 
+    
     }
-
 
     return (
         <div className="container">
@@ -35,7 +36,7 @@ function Child() {
 
             <h3>Add new transaction</h3>
             <hr />
-            <form className="transaction-form" onSubmi={handleAddition}>
+            <form className="transaction-form" onSubmit={handleAddition}>
                 <label>
                     Enter Description <br />
                     <input type="text" required/>
