@@ -3,6 +3,11 @@ const TransactionReducer =((state,action)=>{
         case "ADD_Transaction":{
             return  [action.payload, ...state]
         }
+        
+        case "Delete_Transaction": {
+            return [action.payload, ...state]
+        }
+
         default:
             return state;
     }

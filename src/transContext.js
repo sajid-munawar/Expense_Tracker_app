@@ -31,4 +31,15 @@ export const TransactionProvider = ({ children }) => {
             {children}
         </TransactionContext.Provider>
     )
+    // function deleteTransaction() {
+    //     dispatch({
+    //         type: "Delete_Transaction",
+            
+    //     })
+    //     return {
+    //         ...state,
+    //         transactions:state.transactions
+    //         .filter(transaction=>transaction.id !==action.payload )
+    //     }
+    // }
 }
