@@ -39,8 +39,8 @@ function Child() {
 
                 <h3>Your Balance <br />${getIncome() +getExpense()} </h3>
                 <div className="expense-container">
-                    <h3>INCOME<br />{getIncome()}</h3>
-                    <h3>EXPENSE<br />{getExpense()}</h3>
+                    <h3>INCOME<br />${getIncome()}</h3>
+                    <h3>EXPENSE<br />${getExpense()}</h3>
                 </div>
                 <h3>History</h3>
                 <hr />
@@ -50,7 +50,7 @@ function Child() {
                         return (
                             <li key={ind}>
                                 <span>{transObj.desc} </span>
-                                <span>{transObj.amount}</span>
+                                <span>${transObj.amount}</span>
                             </li>)
                     })}
 
